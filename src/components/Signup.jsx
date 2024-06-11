@@ -12,7 +12,7 @@ const Signup = () => {
     let handleSubmit = (e) =>
         {
             e.preventDefault()
-            axios.post('http://localhost:3000/signup',{name,email,password})
+            axios.post('https://form-auth-client.vercel.app/signup',{name,email,password})
             .then(res => 
                 {
                     console.log(res.data)
