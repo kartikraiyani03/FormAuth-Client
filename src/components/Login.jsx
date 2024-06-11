@@ -11,7 +11,7 @@ const Login = () => {
     let handleSubmit = (e) =>
         {
             e.preventDefault()
-            axios.post('http://localhost:3000/login',{email,password})
+            axios.post('https://form-auth-client.vercel.app/login',{email,password})
             .then(res =>  
             {
                     console.log(res.data) 
