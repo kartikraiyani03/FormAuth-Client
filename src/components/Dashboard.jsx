@@ -9,7 +9,7 @@ const Dashboard = () => {
 
   useEffect(() =>
   { 
-    axios.get('http://localhost:3000/getData')
+    axios.get('https://form-auth-client.vercel.app/getData')
     .then((user) => setUsers(user.data)) 
     .catch((e) => console.log(e))
   },[])
